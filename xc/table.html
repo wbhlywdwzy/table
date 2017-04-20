@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>table</title>
+    <link rel="stylesheet" href="css/table.css">
+</head>
+
+<body>
+    <div class="top">
+        <p>首页 / 我的课程 / 课程列表</p>
+    </div>
+    <div class="center">
+        <div class="add">
+            分类：
+            <input type="text" class="classify">&nbsp;&nbsp; 标题：
+            <input type="text" class="title">&nbsp;&nbsp; 班级：
+            <input type="text" class="room">&nbsp;&nbsp; 状态：
+            <input type="text" class="status">&nbsp;&nbsp;
+            <br/> 创建时间：
+            <input type="text" class="time">&nbsp;&nbsp; 创建者：
+            <input type="text" class="create">&nbsp;&nbsp; 分校地区：
+            <input type="text" class="area">&nbsp;&nbsp;
+            <input type="button" class="addBtn" value="录入">&nbsp;&nbsp;
+            <span class="error">请勿留空</span>
+        </div>
+    </div>
+    <table>
+        <thead>
+            <th>
+                <input type="checkbox" class="check1" value="全选删除">
+                <span class="lt">ID</span>
+                <span class="lt1">↓</span>
+                <span class="lt2">↑</span>
+            </th>
+            <th>分类</th>
+            <th>标题</th>
+            <th>班级</th>
+            <th>状态</th>
+            <th>创建时间</th>
+            <th>创建者</th>
+            <th>分校地区</th>
+            <th>删除/修改</th>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <div class="last">
+        <input type="text" class="inp2">
+        <input type="button" class="delete" value="delete">
+    </div>
+</body>
+
+</html>
+<script src="js/jquery.min.js"></script>
+<script src="js/table.js"></script>
+<script src="js/data.js"></script>
