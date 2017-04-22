@@ -1,8 +1,56 @@
 @import 'css.css';
+.top {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    p {
+        background: #333333;
+        color: #ffffff;
+        font-weight: bolder;
+        font-size: 16px;
+        text-indent: 19px;
+    }
+}
+
+.center {
+    width: 100%;
+    height: 80px;
+    background: #FFF;
+    position: fixed;
+    left: 0;
+    top: 40px;
+    z-index: 1;
+}
+
+.add {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    line-height: 30px;
+    font-size: 14px;
+    input {
+        height: 20px;
+    }
+    .error {
+        color: red;
+        font-size: 16px;
+        display: none;
+    }
+}
+.circle{
+    width: 100%;
+    position: absolute;
+    top: 130px;
+    z-index: 0;
+}
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 130px;
+
 }
 
 thead {
@@ -33,58 +81,29 @@ tbody tr:hover {
     background: #f2ebeb;
 }
 
-tbody tr.bg {
+tbody tr.bg{
     background: #333;
     color: #FFF;
 }
-
-.top {
-    width: 100%;
-    height: 40px;
-    line-height: 40px;
-    position: fixed;
-    left: 0;
-    top: 0;
-    p {
-        background: #333333;
-        color: #ffffff;
-        font-weight: bolder;
-        font-size: 16px;
-        text-indent: 19px;
-    }
+tbody tr.bg input[type='text']{
+    color: #FFF;
 }
 
-.center {
-    width: 100%;
-    height: 80px;
-    background: #FFF;
-    position: fixed;
-    left: 0;
-    top: 40px;
+.rank{
+    float: left;
 }
-
-.add {
-    width: 100%;
-    height: auto;
-    padding: 10px;
-    line-height: 30px;
-    font-size: 14px;
-    input {
-        height: 20px;
-    }
-    .error {
-        color: red;
-        font-size: 16px;
-        display: none;
-    }
-}
-
-.lt {
+.check1{
+    float: left;
     margin-left: 5px;
 }
-.lt2{
-    display: none; 
+.lt {
+    margin-left: 5px;
+    
 }
+.lt1{
+    display: none;
+}
+
 table input[type='text'] {
     border: none;
     background: none;
